@@ -1,2 +1,9 @@
-<h1>CircaTerra</h1>
-<h4>Travel Outfitters</h4>
+<% @products.each do |product| %>
+	<div>
+		<h1><%= product.brand %><h1><br />
+		<i><%= product.item_name %></i><br />
+		<p><%= product.price %></p><br />
+	</div>
+
+	<hr />
+<% end %>
